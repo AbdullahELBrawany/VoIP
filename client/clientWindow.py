@@ -21,6 +21,7 @@ class window(tk.Tk):
         
 
     def init_UI(self):
+        self.geometry("600x600")
         self.title("VOIP Project")
         self.title_label = tk.Label(self, text="Choose callee",  font=("Arial", 14))
         self.title_label.pack(pady=10)

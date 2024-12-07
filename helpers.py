@@ -110,9 +110,9 @@ def ping(host):
     param = '-n' if platform.system().lower()=='windows' else '-c'
 
     # Building the command. Ex: "ping -c 1 google.com"
-    command = ['ping', param, '1', host]
-
-    return (True, host) if subprocess.call(command) == 0 else (False, None)
+    command = 'ping '+str(param)+' 1 '+str(host)
+    output = os.popen(command).read().lower()
+    return (True, host) if not "unreachable" in output and not "100% packet loss" in output else (False, None)
 
 def find_free_port():
     with closing(socket.socket(socket.AF_INET, socket.SOCK_STREAM)) as s:
