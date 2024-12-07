@@ -15,7 +15,7 @@ class finder(Thread):
 
     def run(self):
         while self.running:
-            for i in range(2, 255):
+            for i in range(2, 11):
                 if not self.running:
                     break
                 for n in range(0, 2):

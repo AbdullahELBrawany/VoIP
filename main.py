@@ -1,5 +1,5 @@
 from helpers import get_ip
-from sys import exit, argv
+from sys import exit
 from client.clientWindow import window
 from easygui import enterbox
 
