@@ -1,0 +1,12 @@
+__pycahce__
+DNS
+.venv
+__pycache__/clientWindow.cpython-312.pyc
+__pycache__/helpers.cpython-312.pyc
+__pycache__/receive.cpython-312.pyc
+__pycache__/send.cpython-312.pyc
+client/__pycache__/clientWindow.cpython-312.pyc
+client/__pycache__/findIPs.cpython-312.pyc
+client/__pycache__/join.cpython-312.pyc
+client/__pycache__/receive.cpython-312.pyc
+client/__pycache__/send.cpython-312.pyc
